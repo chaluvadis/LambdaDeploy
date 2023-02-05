@@ -1,8 +1,16 @@
 {
     "version": "0.2.0",
     "configurations": [
-       {
-        "type": "aws-sam",
-       }
+        {
+            "name": ".Net 6 AWS Mock Lambda Test",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "/Users/hola/.dotnet/tools/dotnet-lambda-test-tool-6.0",
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "stopAtEntry": false,
+            "internalConsoleOptions": "openOnSessionStart"
+        }
     ]
 }
